@@ -57,6 +57,27 @@ public class SumaDiagonales {
             }
         }
         System.out.println("\nLa suma de los valores de la diagonal secundaria es " + secondDiag + "\n");
+
+        // Como paso extra, vamos a trasponer la matriz (intercambiar filas por columnas):
+
+        int[][] transposedMatrix = new int[4][4];
+        counter = 1;
+
+        for(int i = 0; i < transposedMatrix.length; i++){
+            for(int j = 0; j < transposedMatrix[i].length; j++){
+                transposedMatrix[i][j] = counter;
+                counter++;
+            }
+        }
+
+        System.out.println("Matriz traspuesta:\n");
+
+        for(int i = 0; i < transposedMatrix.length; i++){
+            for(int j = 0; j < transposedMatrix[i].length; j++){
+                System.out.print(transposedMatrix[j][i] + "\t");
+            }
+            System.out.println();
+        }
     }
     
 }
