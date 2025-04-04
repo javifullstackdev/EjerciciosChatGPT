@@ -60,21 +60,11 @@ public class SumaDiagonales {
 
         // Como paso extra, vamos a trasponer la matriz (intercambiar filas por columnas):
 
-        int[][] transposedMatrix = new int[4][4];
-        counter = 1;
-
-        for(int i = 0; i < transposedMatrix.length; i++){
-            for(int j = 0; j < transposedMatrix[i].length; j++){
-                transposedMatrix[i][j] = counter;
-                counter++;
-            }
-        }
-
         System.out.println("Matriz traspuesta:\n");
 
-        for(int i = 0; i < transposedMatrix.length; i++){
-            for(int j = 0; j < transposedMatrix[i].length; j++){
-                System.out.print(transposedMatrix[j][i] + "\t");
+        for(int i = 0; i < matrix.length; i++){
+            for(int j = 0; j < matrix[i].length; j++){
+                System.out.print(matrix[j][i] + "\t");
             }
             System.out.println();
         }
